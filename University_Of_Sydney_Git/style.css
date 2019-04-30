@@ -1,0 +1,33 @@
+html,body
+{
+	height: 100%;
+}
+#cover
+{
+	background: #222 url('img/uni.jpg') center center no-repeat;
+	background-size: cover;
+	color: blueviolet;
+	text-align: center;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+#cover-caption
+{
+	width: 100%;
+}
+.nav-item::after
+{
+	content:'';
+	display:block;
+	width:0px;
+	height:2px;
+	background:yellow;
+	transition: 0.2s;
+}
+
+.nav-item:hover::after
+{
+	width:100%;
+}
